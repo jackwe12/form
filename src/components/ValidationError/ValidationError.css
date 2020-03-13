@@ -1,0 +1,13 @@
+.uk-text-danger{
+    color:red;
+}
+.uk-text-danger{
+    font-size: 12px;
+}
+.uk-form-danger{
+    border:red solid 1px;
+}
+
+.uk-form-danger:focus{
+    border:red solid 1px;
+}

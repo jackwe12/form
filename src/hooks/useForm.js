@@ -26,7 +26,6 @@ const useForm = (initModel, submitCallback) => {
   const validateInput = input => {
     let alert = null;
     // input.validators && input.validators.forEach(v => alert = v.isValidFun && !v.isValidFun(input.value) ? v.alert : alert);
-    // if (input.validators.regex.test(input.value)){alert=""}
     // console.log(input.validators.regex.test('Jack'))
     // console.log(input.validators)
     // console.log(input.validators.regex.test(input.value))
