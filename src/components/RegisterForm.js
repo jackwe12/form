@@ -1,11 +1,11 @@
 import React from 'react';
-import Form from './Form';
-// import registerFormModel from '../models/registrationModel';
+import FormPanel from './FormPanel';
+import formModel from '../models/Model';
 
 function RegisterForm(){
     return (
         <div className="">
-            <Form />
+            <FormPanel model={formModel}/>
         </div>
     )
 }

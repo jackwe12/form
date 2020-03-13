@@ -6,7 +6,8 @@ function App(){
   return(
     <div className="app">
       <RegisterForm/>
-    </div>)
+    </div>
+    );
 }
 // function App() {
 //   return (
