@@ -1,11 +1,15 @@
 .uk-text-danger{
     color:red;
+    line-height: 21px;
 }
 .uk-text-danger{
     font-size: 12px;
 }
 .uk-form-danger{
-    border:red solid 1px;
+    border:red solid 1px!important;
+    box-shadow: 0 0 3px red !important;
+    -moz-box-shadow: 0 0 3px red !important;
+    -webkit-box-shadow: 0 0 3px red !important;
 }
 
 .uk-form-danger:focus{

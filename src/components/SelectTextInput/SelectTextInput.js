@@ -3,7 +3,7 @@ import ValidationError from '../ValidationError/ValidationError';
 
 function SelectTextInput({ name, label, type, value, alert, options, setInputs, placeholder }) {
     return (
-        <div>
+        <div className="input-component">
             <label>{label}</label>
             <select  name={name} type={type} value={value} onChange={setInputs} >
                 {options && options.map(option => <option key={option.value} value={option.value}>{option.name}</option>)}
