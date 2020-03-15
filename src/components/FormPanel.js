@@ -8,14 +8,13 @@ import useForm from '../hooks/useForm';
 import '../style/style.css';
 import logo from '../image/Crunch_Accounting.png'
 import useModal from '../hooks/useModal';
-import Modal from './SaveModal/SaveModal';
+import Modal from './SaveModal/SaveModal'
 
 function FormPanel({ submitCallback, model }) {
-    const [inputs, setInputs, setSubmit] = useForm(model, submitCallback);
+    const [inputs, setInputs, clearInputs] = useForm(model, submitCallback);
     const {isShowing, toggle} = useModal();
 
-    const clearForm = () => { console.log('clear') };
-    const saveForm = () => { console.log('save') };
+
 
     return (
         <section>
@@ -29,10 +28,10 @@ function FormPanel({ submitCallback, model }) {
             </div>
             <div className="blue-banner">
                 <p className="create-content">Create Contact</p>
-                <button className="cancel-btn btn" onClick={clearForm}>Cancel</button>
+                <button className="cancel-btn btn" onClick={clearInputs}>Cancel</button>
                 <button className="save-btn btn" onClick={toggle}>Save</button>
             </div>
-            <form>
+            <form id="contact-form">
                 <div className="grey-banner">
                     <div className="contact-section">
                         <div className="contact title">Contact Information</div>
@@ -41,7 +40,7 @@ function FormPanel({ submitCallback, model }) {
                                 name: "firstName",
                                 label: "First Name",
                                 options: [
-                                    { value:'None', name:'None', disabled:"true", selected:"true"},
+                                    { value:'-None', name:'-None', disabled:true, selected:true},
                                     { value: 'Mr', name: 'Mr' },
                                     { value: 'Mrs', name: 'Mrs' },
                                     { value: 'Miss', name: 'Miss' },
@@ -153,7 +152,7 @@ function FormPanel({ submitCallback, model }) {
                         </div>
                     </div>
                     <div>
-                        <input className="submit-btn" type="submit" onClick={setSubmit} value="submit" />
+                        {/* <input className="submit-btn" type="submit" onClick={setSubmit} value="submit" /> */}
                     </div>
                     <footer>
                         <span className="crunch-accounting">&copy;2020 Crunch Accounting. All right reserved.</span>

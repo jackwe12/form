@@ -8,18 +8,22 @@ const formModel = [
         id: 'name-length',
         alert: 'First name is invalid',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
-    }
+    },
+    alert:'',
+    value:'',
 }, 
 {
     name: 'lastName',
-    label: 'Last Name',
     type: '',
     parseFun: '',
     validators: {
         id: 'name-length',
         alert: 'Last name is invalid',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
-    }
+    },
+    alert:'',
+    value:'',
+
 }, 
 {
     name: 'accountName',
@@ -30,7 +34,10 @@ const formModel = [
         id: 'account-name',
         alert: 'At least first name and last name',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
-    }
+    },
+    alert:'',
+    value:'',
+
 }, 
 {
     name: 'companyName',
@@ -41,7 +48,8 @@ const formModel = [
         id: 'name-length',
         alert: '',
         regex:/\s\S/,
-    }
+    },
+    alert:''
 }, 
 {
     name: 'phone',
@@ -51,7 +59,8 @@ const formModel = [
         id: 'mail-pattern',
         alert: 'Phone number is in valid in Australia',
         regex:/(^1300\d{6}$)|(^1800|1900|1902\d{6}$)|(^0[2|3|7|8]{1}[0-9]{8}$)|(^13\d{4}$)|(^04\d{2,3}\d{6}$)/,
-    }, 
+    },
+    alert:'' 
 }, 
 {
     name: 'fax',
@@ -61,7 +70,8 @@ const formModel = [
     validators: {
         alert: '',
         regex:/\s\S/,
-    }
+    },
+    alert:''
 }, 
 {
     name: 'title',
@@ -71,7 +81,8 @@ const formModel = [
     validators: {
         alert: '',
         regex:/\s\S/,
-    }
+    },
+    alert:''
 }, 
 {
     name: 'email',
@@ -82,7 +93,8 @@ const formModel = [
         id: 'email-format',
         alert: 'Email format is invalid',
         regex:/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-    }
+    },
+    alert:''
 }, 
 {
     name: 'emailOpt',
@@ -103,7 +115,8 @@ const formModel = [
         id: 'name-length',
         alert: 'Address cannot be empty',
         regex:/^(?!\s*$).+/,
-    }
+    },
+    alert:''
 },  
 {
     name: 'city',
@@ -113,7 +126,8 @@ const formModel = [
         id: 'education-required',
         alert: 'City cannot be empty',
         regex:/^(?!\s*$).+/,  
-      }
+      },
+      alert:''
 },
 {
     name: 'state',
@@ -122,7 +136,9 @@ const formModel = [
     validators: {
         id: 'sex-required',
         alert: 'State cannot be empty',
-        regex:/^(?!\s*$).+/,      }
+        regex:/^(?!\s*$).+/,
+    },
+    alert:''
 }, 
 {
     name: 'postcode',
@@ -132,7 +148,8 @@ const formModel = [
         id: 'sex-required',
         alert: 'Postcode should be digit number',
         regex:/^[1-9][0-9]{3}$/,
-    }
+    },
+    alert:''
 }, 
 {
     name: 'description',
@@ -144,7 +161,8 @@ const formModel = [
         alert: 'Description cannot be empty',
         regex:/^(?!\s*$).+/,  
 
-    }
+    },
+    alert:''
 }, 
 
 ];

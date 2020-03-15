@@ -91,6 +91,7 @@ textarea::-webkit-resizer{
     position: relative;
     padding: 5px;
     height:12px;
+    transform: translateY(5px);
 }
 #emailOpt :active, #emailOpt:checked:active{
     box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
@@ -134,6 +135,7 @@ textarea::-webkit-resizer{
     margin-bottom: 10rem;
 }
 footer{
+    margin-top:10rem;
     color:#828282;
     font-size: 0.7rem;
     padding-bottom: 1.1rem;

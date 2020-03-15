@@ -10,10 +10,7 @@
     3px 3px,
     3px 3px;
     background-repeat: no-repeat;
-    /* background-image: url('../../image/arrow_down.png');
-    background-size: 10px;
-    background-position: 35px 10px;
-    padding-right: 5px; */
+
     
 }
 .select-text-input-select:after{
@@ -26,19 +23,26 @@
     border: 6px solid transparent;
     border-color: #fff transparent transparent transparent;
 }
+.change-select-color{
+    color:#000!important;
+}
 
 .contact select{
+    text-align: center;
+    color: #d0d0d0;
     border:0;
     border-right: 0.05rem solid #d0d0d0;
     padding-left:8px;
     padding-right:8px;
-    /* appearance: none; */
     border-radius: 0px;
     height: 14.67px;
     background-color: #ffffff;
     height:22px;
-    width:3rem;
+    width:3.5rem;
 }
 select:disabled{
+    color:#d0d0d0;
+}
+select option:first{
     color:#d0d0d0;
 }

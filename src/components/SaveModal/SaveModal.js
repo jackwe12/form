@@ -8,13 +8,13 @@ const Modal = ({ isShowing, hide, inputs }) => isShowing ? ReactDOM.createPortal
     <div className="modal-wrapper" aria-modal aria-hidden tabIndex={-1} role="dialog">
       <div className="modal">
         <div className="modal-header">
-          <button type="button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
+          <button type="modal-button" className="modal-close-button" data-dismiss="modal" aria-label="Close" onClick={hide}>
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-save">
-            <span class="modal-save-title">Saved</span>
-            <span class="modal-save-check">&#10003;</span>
+        <div className="modal-save">
+            <span className="modal-save-title">Saved</span>
+            <span className="modal-save-check">&#10003;</span>
             <p>The contact details have been saved</p>
         </div>
         <div className="modal-contact-info modal-flex-box">
