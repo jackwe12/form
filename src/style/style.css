@@ -158,6 +158,34 @@ footer{
     left:60%;
 }
 
+@media screen and (max-width:500px ){
+    .btn{
+        width: 3rem;
+    }
+    .cancel-btn{
+        left:50%;
+    }
+    .save-btn{
+        left:70%;
+    }
+    .input-component{
+        width:100%;
+    }
+    
+    footer{
+        padding-bottom: 5rem;
+    }
+    .crunch-accounting{
+        left: 10%;
+    }
+    #description{
+        width:250px;
+    }
+    .footer-right{
+        left:10%;
+        top:2rem;
+    }
+}
 
 @media screen and (max-width:1024px ){
     .flex-box{
