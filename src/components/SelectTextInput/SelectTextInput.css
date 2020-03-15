@@ -1,0 +1,44 @@
+.select-text-input-select{
+    appearance: none;
+    background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%);
+  background-position:
+    calc(100% - 6.5px) calc(1em ),
+    calc(100% - 4px) calc(1em );
+  background-size:
+    3px 3px,
+    3px 3px;
+    background-repeat: no-repeat;
+    /* background-image: url('../../image/arrow_down.png');
+    background-size: 10px;
+    background-position: 35px 10px;
+    padding-right: 5px; */
+    
+}
+.select-text-input-select:after{
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+.contact select{
+    border:0;
+    border-right: 0.05rem solid #d0d0d0;
+    padding-left:8px;
+    padding-right:8px;
+    /* appearance: none; */
+    border-radius: 0px;
+    height: 14.67px;
+    background-color: #ffffff;
+    height:22px;
+    width:3rem;
+}
+select:disabled{
+    color:#d0d0d0;
+}

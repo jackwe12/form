@@ -121,8 +121,8 @@ const formModel = [
     type: 'Select',
     validators: {
         id: 'sex-required',
-        alert: 'Sex is not selected'
-    }
+        alert: 'State cannot be empty',
+        regex:/^(?!\s*$).+/,      }
 }, 
 {
     name: 'postcode',

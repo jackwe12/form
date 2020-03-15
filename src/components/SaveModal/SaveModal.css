@@ -1,0 +1,105 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+  }
+  
+  .modal {
+    z-index: 100;
+    background: white;
+    position: relative;
+    margin: 1.75rem auto;
+    border-radius: 3px;
+    height: 100vh;
+    max-width: 500px;
+    padding: 2rem;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .modal-close-button {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #000;
+    cursor: pointer;
+    border: none;
+  }
+  
+  modal-button {
+    font-size: .9rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: .3rem 1rem;
+    margin-left: .5rem;
+  }
+  
+  .button-default {
+    background: #247BA0;
+    color: #fff;
+  }
+
+  /*modal content css*/
+  .modal-save{
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+  .modal-save-check{
+    margin-left: 1rem;
+    color: #54df9a;
+  }
+  .modal-save p{
+    color:#828282;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .modal-title{
+    margin-top: 1rem;
+    color:#f67d02;
+    width:100%;
+  }
+  .modal-box-sm{
+    width:40%;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .modal-label{
+    color:#828282;
+  }
+  .modal-content{
+    color:#000;
+    margin-left: 0.5rem;
+  }
+  .modal-flex-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+
+
+
+
+  /*modal content css*/

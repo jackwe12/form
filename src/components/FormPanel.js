@@ -7,20 +7,30 @@ import CheckboxInput from './CheckboxInput/CheckboxInput';
 import useForm from '../hooks/useForm';
 import '../style/style.css';
 import logo from '../image/Crunch_Accounting.png'
+import useModal from '../hooks/useModal';
+import Modal from './SaveModal/SaveModal';
 
 function FormPanel({ submitCallback, model }) {
     const [inputs, setInputs, setSubmit] = useForm(model, submitCallback);
+    const {isShowing, toggle} = useModal();
+
     const clearForm = () => { console.log('clear') };
     const saveForm = () => { console.log('save') };
+
     return (
         <section>
             <div className="head-logo">
                 <img src={logo} alt="logo" />
+                <Modal
+                    inputs={inputs}
+                    isShowing={isShowing}
+                    hide={toggle}
+                />
             </div>
             <div className="blue-banner">
                 <p className="create-content">Create Contact</p>
                 <button className="cancel-btn btn" onClick={clearForm}>Cancel</button>
-                <button className="save-btn btn" onClick={saveForm}>Save</button>
+                <button className="save-btn btn" onClick={toggle}>Save</button>
             </div>
             <form>
                 <div className="grey-banner">
@@ -31,7 +41,7 @@ function FormPanel({ submitCallback, model }) {
                                 name: "firstName",
                                 label: "First Name",
                                 options: [
-                                    { value:'None', name:'None'},
+                                    { value:'None', name:'None', disabled:"true", selected:"true"},
                                     { value: 'Mr', name: 'Mr' },
                                     { value: 'Mrs', name: 'Mrs' },
                                     { value: 'Miss', name: 'Miss' },

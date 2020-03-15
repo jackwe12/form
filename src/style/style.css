@@ -66,18 +66,8 @@
     font-size: 0.8rem;
     margin-bottom: 3px;
 }
-.contact select{
-    color:#d0d0d0;
-    border:0;
-    border-right: 0.05rem solid;
-    padding-left:8px;
-    padding-right:8px;
-    appearance: none;
-    border-radius: 0px;
-    height: 14.67px;
-    background-color: #ffffff;
-    height:22px;
-}
+
+
 .input-component input{
     border:0;
     padding-left:0.5rem;
@@ -126,10 +116,11 @@ textarea::-webkit-resizer{
     width:50%;
     border:0;
     padding-left:0.5rem;
-    appearance: none;
+    /* appearance: none; */
     border-radius: 0px;
     height: 14.67px;
     background-color: #ffffff;
+    height:22px;
 }
 .checkbox-label{
     display: inline-block!important;
