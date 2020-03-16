@@ -15,14 +15,11 @@ function SelectInput({ name, label, type, value, alert, options, setInputs, plac
         valueArray.push(item.textContent);
         });
 
-        // const closeDropdown = () => {
-        //     dropdown.classList.remove('open');
-        //   }
+
         
           inputField.addEventListener('input', (e) => {
             dropdown.classList.add('open');
             let inputValue = inputField.value.toLowerCase();
-            // let valueSubstring;
             if (inputValue.length > 0) {
               for (let j = 0; j < valueArray.length; j++) {
                 if (!(inputValue.substring(0, inputValue.length) === valueArray[j].substring(0, inputValue.length).toLowerCase())) {
@@ -65,13 +62,6 @@ function SelectInput({ name, label, type, value, alert, options, setInputs, plac
           });
 
         
-        //   document.addEventListener('click', (evt) => {
-        //     const isDropdown = dropdown.contains(evt.target);
-        //     const isInput = inputField.contains(evt.target);
-        //     if (!isDropdown && !isInput) {
-        //       dropdown.classList.remove('open');
-        //     }
-        //   });
 
 
     });
@@ -81,9 +71,6 @@ function SelectInput({ name, label, type, value, alert, options, setInputs, plac
     return (
         <div className="input-component">
             <label>{label}</label>
-            {/* <select id={name} name={name} type={type} value={value} onChange={setInputs} className={"uk-select" + (alert ? ' uk-form-danger' : '')+" select-input"}>
-                {options && options.map(option => <option key={option.value} value={option.value} >{option.name}</option>)}
-            </select> */}
             <input className="chosen-value" id={name} name={name} value={value} type={type || ""}  onChange={setInputs} placeholder={placeholder}/>
             <ul className="value-list">
                 {options.map(option=><li key={option.name} name={name} value={option.value}>{option.name}</li>)}

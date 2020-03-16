@@ -12,7 +12,6 @@ const useForm = (initModel, submitCallback) => {
   }
 
   const handleChange = e => {
-    console.log(e.target)
     // e.persist();
     inputs.forEach(i => {
       if (i.name === e.target.name) {
