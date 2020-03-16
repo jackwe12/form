@@ -51,7 +51,9 @@
     border-radius: 2px;
     /* top:25%;
     left:80%; */
-
+}
+.save-btn:disabled{
+    background-color: #828282;
 }
 .grey-banner{
     background-color: #f9f9f9;

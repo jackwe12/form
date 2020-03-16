@@ -9,11 +9,21 @@ import '../style/style.css';
 import logo from '../image/Crunch_Accounting.png'
 import useModal from '../hooks/useModal';
 import Modal from './SaveModal/SaveModal'
+import {useState, useEffect} from 'react';
 
 function FormPanel({ submitCallback, model }) {
     const [inputs, setInputs, clearInputs, handleSelectChange] = useForm(model, submitCallback);
     const {isShowing, toggle} = useModal();
+    const [btnDisabled, setBtnDisabled] = useState(true)
 
+    useEffect(() => {
+        //verify postcode & email & phone number
+        if (inputs[4].validate&&inputs[7].validate&&inputs[12].validate){
+            setBtnDisabled(false)
+        }else{
+            setBtnDisabled(true)
+        }
+    },[inputs])
 
 
     return (
@@ -30,7 +40,7 @@ function FormPanel({ submitCallback, model }) {
                 <p className="create-content">Create Contact</p>
                 <div className="btn-group">
                     <button className="cancel-btn btn" onClick={clearInputs}>Cancel</button>
-                    <button className="save-btn btn" onClick={toggle}>Save</button>
+                    <button className="save-btn btn" onClick={toggle} disabled={btnDisabled}>Save</button>
                 </div>
 
             </div>

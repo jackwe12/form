@@ -8,8 +8,6 @@ function SelectInput({ name, label, type, value, alert, options, setInputs, plac
         const inputField = document.querySelector('.chosen-value');
         const dropdown = document.querySelector('.value-list');
         const dropdownArray = [...document.querySelectorAll('li')];
-        // console.log(inputField);
-        // dropdown.classList.add('open');
         let valueArray = [];
         dropdownArray.forEach(item => {
         valueArray.push(item.textContent);

@@ -3,36 +3,28 @@ const formModel = [
 {
     name: 'firstName',
     type: 'Text',
-    parseFun: '',
     validators: {
-        id: 'name-length',
-        alert: 'First name is invalid',
+        alert: '',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
     },
     alert:'',
-    value:'',
 }, 
 {
     name: 'lastName',
     type: '',
-    parseFun: '',
     validators: {
-        id: 'name-length',
-        alert: 'Last name is invalid',
+        alert: '',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
     },
     alert:'',
-    value:'',
 
 }, 
 {
     name: 'accountName',
     label: 'Account Name',
     type: 'Text',
-    parseFun: '',
     validators: {
-        id: 'account-name',
-        alert: 'At least first name and last name',
+        alert: '',
         regex:/^[a-zA-Z]+(([',.-][a-zA-Z])?[a-zA-Z]*)*$/,
     },
     alert:'',
@@ -43,9 +35,7 @@ const formModel = [
     name: 'companyName',
     label: 'Company Name (optional)',
     type: 'Text',
-    parseFun: '',
     validators: {
-        id: 'name-length',
         alert: '',
         regex:/\s\S/,
     },
@@ -56,8 +46,7 @@ const formModel = [
     label: 'Phone',
     type: 'Text',
     validators: {
-        id: 'mail-pattern',
-        alert: 'Phone number is invalid in Australia',
+        alert: 'Phone number is invalid',
         regex:/(^1300\d{6}$)|(^1800|1900|1902\d{6}$)|(^0[2|3|7|8]{1}[0-9]{8}$)|(^13\d{4}$)|(^04\d{2,3}\d{6}$)/,
     },
     alert:'' 
@@ -66,7 +55,6 @@ const formModel = [
     name: 'fax',
     label: 'Fax (optional)',
     type: 'Text',
-    parseFun: '',
     validators: {
         alert: '',
         regex:/\s\S/,
@@ -77,7 +65,6 @@ const formModel = [
     name: 'title',
     label: 'Title(',
     type: '',
-    parseFun: '',
     validators: {
         alert: '',
         regex:/\s\S/,
@@ -88,9 +75,7 @@ const formModel = [
     name: 'email',
     label: 'Email',
     type: 'Text',
-    parseFun: '',
     validators: {
-        id: 'email-format',
         alert: 'Email format is invalid',
         regex:/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     },
@@ -100,9 +85,7 @@ const formModel = [
     name: 'emailOpt',
     label: 'Email Opt Out',
     type: 'checkbox',
-    parseFun: '',
     validators: {
-        id: 'name-length',
         alert: '',
         regex:/\s\S/,    }
 }, 
@@ -110,9 +93,7 @@ const formModel = [
     name: 'address',
     label: 'Street No. & Street',
     type: 'Text',
-    parseFun: '',
     validators: {
-        id: 'name-length',
         alert: 'Address cannot be empty',
         regex:/^(?!\s*$).+/,
     },
@@ -123,7 +104,6 @@ const formModel = [
     label: 'City',
     type: 'Text',
     validators: {
-        id: 'education-required',
         alert: 'City cannot be empty',
         regex:/^(?!\s*$).+/,  
       },
@@ -134,7 +114,6 @@ const formModel = [
     label: 'State',
     type: 'Select',
     validators: {
-        id: 'sex-required',
         alert: '',
         regex:/^(?!\s*$).+/,
     },
@@ -145,7 +124,6 @@ const formModel = [
     label: 'Postcode',
     type: 'Text',
     validators: {
-        id: 'sex-required',
         alert: 'Postcode should be 4 digit number',
         regex:/^[1-9][0-9]{3}$/,
     },
@@ -155,9 +133,7 @@ const formModel = [
     name: 'description',
     label: 'Description',
     type: 'TextArea',
-    parseFun: '',
     validators: {
-        id: 'description-required',
         alert: '',
         regex:/\s\S/,  
 

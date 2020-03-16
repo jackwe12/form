@@ -30,15 +30,16 @@ const useForm = (initModel, submitCallback) => {
     setInputs([...inputs]);
 
   }
-  // const handleSubmit = e => {
-  //   e && e.preventDefault();
-  // };
 
 
   const validateInput = input => {
     let alert = "";
 
-    if (!input.validators.regex.test(input.value)) {alert = input.validators.alert}
+    if (!input.validators.regex.test(input.value)) {
+      alert = input.validators.alert;
+      input.validate=false;
+    }
+    else{input.validate=true}
     input.alert = alert;
   }
 
