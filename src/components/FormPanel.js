@@ -11,7 +11,7 @@ import useModal from '../hooks/useModal';
 import Modal from './SaveModal/SaveModal'
 
 function FormPanel({ submitCallback, model }) {
-    const [inputs, setInputs, clearInputs] = useForm(model, submitCallback);
+    const [inputs, setInputs, clearInputs, handleSelectChange] = useForm(model, submitCallback);
     const {isShowing, toggle} = useModal();
 
 
@@ -28,8 +28,11 @@ function FormPanel({ submitCallback, model }) {
             </div>
             <div className="blue-banner">
                 <p className="create-content">Create Contact</p>
-                <button className="cancel-btn btn" onClick={clearInputs}>Cancel</button>
-                <button className="save-btn btn" onClick={toggle}>Save</button>
+                <div className="btn-group">
+                    <button className="cancel-btn btn" onClick={clearInputs}>Cancel</button>
+                    <button className="save-btn btn" onClick={toggle}>Save</button>
+                </div>
+
             </div>
             <form id="contact-form">
                 <div className="grey-banner">
@@ -116,7 +119,7 @@ function FormPanel({ submitCallback, model }) {
                                 placeholder: "Sydney",
                                 alert: inputs[10].alert,
                             }} />
-                            <SelectInput setInputs={setInputs} {...{
+                            <SelectInput setInputs={setInputs} handleSelectChange={handleSelectChange} {...{
                                 name: "state",
                                 label: "State",
                                 options: [

@@ -53,7 +53,7 @@ const Modal = ({ isShowing, hide, inputs }) => isShowing ? ReactDOM.createPortal
             </div>
             <div className="modal-box-sm">
                 <span className="modal-label"> Email Opt Out</span>
-                <span className="modal-content"> {inputs[8].value} </span>
+                <span className="modal-content"> {inputs[8].value?"Yes":"No"} </span>
             </div>
 
         </div>

@@ -1,17 +1,33 @@
 .uk-text-danger{
-    color:red;
+    color:#f8a4b3;
     line-height: 21px;
+    position: relative;
 }
 .uk-text-danger{
     font-size: 12px;
 }
 .uk-form-danger{
-    border:red solid 1px!important;
-    box-shadow: 0 0 3px red !important;
-    -moz-box-shadow: 0 0 3px red !important;
-    -webkit-box-shadow: 0 0 3px red !important;
+    border:#f8a4b3 solid 1px!important;
+    box-shadow: 0 0 3px #f8a4b3 !important;
+    -moz-box-shadow: 0 0 3px #f8a4b3 !important;
+    -webkit-box-shadow: 0 0 3px #f8a4b3 !important;
 }
 
 .uk-form-danger:focus{
     border:red solid 1px;
+}
+
+.exclamation-circle{
+    opacity: 0.6;
+    position: absolute;
+    top:-17px;
+    left:185px;
+    width: 10px;
+
+}
+.exclamation-circle:hover{
+    opacity: 1.0;
+}
+.exclamation-circle:active{
+    transform: translateY(1px);
 }

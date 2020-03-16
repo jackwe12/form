@@ -57,7 +57,7 @@ const formModel = [
     type: 'Text',
     validators: {
         id: 'mail-pattern',
-        alert: 'Phone number is in valid in Australia',
+        alert: 'Phone number is invalid in Australia',
         regex:/(^1300\d{6}$)|(^1800|1900|1902\d{6}$)|(^0[2|3|7|8]{1}[0-9]{8}$)|(^13\d{4}$)|(^04\d{2,3}\d{6}$)/,
     },
     alert:'' 
@@ -135,7 +135,7 @@ const formModel = [
     type: 'Select',
     validators: {
         id: 'sex-required',
-        alert: 'State cannot be empty',
+        alert: '',
         regex:/^(?!\s*$).+/,
     },
     alert:''
@@ -146,7 +146,7 @@ const formModel = [
     type: 'Text',
     validators: {
         id: 'sex-required',
-        alert: 'Postcode should be digit number',
+        alert: 'Postcode should be 4 digit number',
         regex:/^[1-9][0-9]{3}$/,
     },
     alert:''
@@ -158,8 +158,8 @@ const formModel = [
     parseFun: '',
     validators: {
         id: 'description-required',
-        alert: 'Description cannot be empty',
-        regex:/^(?!\s*$).+/,  
+        alert: '',
+        regex:/\s\S/,  
 
     },
     alert:''

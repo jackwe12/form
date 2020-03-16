@@ -22,23 +22,35 @@
     margin-left: 10px;
     height:1.5rem;
     width:4.5rem;
+    /* position: absolute; */
+}
+.btn:hover{
+    opacity: 1.1;
+}
+.btn:active{
+    transform: translateY(2px);
+}
+.btn-group{
     position: absolute;
+    display: inline-block;
+    top:30%;
+    left:70%
 }
 .cancel-btn{
     background-color: #ffffff;
     color:#F67d02;
     border:0;
     border-radius: 2px;
-    top:25%;
-    left:67%
+    /* top:25%;
+    left:67% */
 }
 .save-btn{
     background-color: #F67d02;
     color:#ffffff;
     border:0;
     border-radius: 2px;
-    top:25%;
-    left:80%;
+    /* top:25%;
+    left:80%; */
 
 }
 .grey-banner{
@@ -67,11 +79,15 @@
     margin-bottom: 3px;
 }
 
+.select-text input{
+    width:134px!important;
+}
 
 .input-component input{
     border:0;
     padding-left:0.5rem;
     height:20px;
+    width:190px;
 }
 .input-component textarea{
     margin-top: 3px;
@@ -128,7 +144,7 @@ textarea::-webkit-resizer{
     margin-right:1rem!important;
 }
 #description{
-    width: 300px;
+    width: 450px;
     height: 150px;
 }
 .submit-btn{
@@ -158,16 +174,35 @@ footer{
     left:60%;
 }
 
-@media screen and (max-width:500px ){
-    .btn{
-        width: 3rem;
+::placeholder{
+    color:#e7e7e7;
+}
+
+
+
+
+
+@media screen and (max-width:1024px ){
+    .flex-box{
+        width:80%;
     }
-    .cancel-btn{
+}
+@media screen and (max-width:800px ){
+    .btn-group{
+        left:60%;
+    }
+}
+@media screen and (max-width:600px ){
+
+    .btn-group{
+        left:50%;
+    }
+    /* .cancel-btn{
         left:50%;
     }
     .save-btn{
         left:70%;
-    }
+    } */
     .input-component{
         width:100%;
     }
@@ -187,12 +222,16 @@ footer{
     }
 }
 
-@media screen and (max-width:1024px ){
-    .flex-box{
-        width:80%;
-    }
-}
 
-::placeholder{
-    color:#e7e7e7;
+@media screen and (max-width:400px ){
+    .btn{
+        width: 3rem;
+    }
+    .crunch-accounting{
+        left:5%;
+    }
+    .footer-right{
+
+    }
+
 }

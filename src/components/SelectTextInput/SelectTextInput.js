@@ -9,7 +9,7 @@ function SelectTextInput({ name, label, type, value, alert, options, setInputs, 
     }
 
     return (
-        <div className="input-component">
+        <div className="input-component select-text">
             <label>{label}</label>
             <select className="select-text-input-select" defaultValue={'-None'} name={name} type={type} onChange={setInputs,setSelectColor} >
                 {options && options.map(option => <option key={option.value} value={option.value} disabled={option.disabled} onClick={setSelectColor} >{option.name}</option>)}
