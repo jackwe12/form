@@ -1,4 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a react app followed by following rules:
+1. Use React.js and no library(eg: Material UI, Bootstrap) to demostrate skills.
+2. Use Jest and Enzyme for unit testing
+3. Use responsive web design adapt from smallest screen(Iphone5) to desktop screen.
+4. Use React new feature -hooks for demostrating more clean and maintainable code(reusable).
+5. 
+
 
 ## Available Scripts
 
