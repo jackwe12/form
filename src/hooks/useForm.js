@@ -22,6 +22,7 @@ const useForm = (initModel) => {
     });
     setInputs([...inputs]);
   };
+  
   const handleSelectChange = ele => {
     inputs.forEach(i => {
       if (i.name === ele.name) {
