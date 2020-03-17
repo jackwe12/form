@@ -11,8 +11,8 @@ import useModal from '../hooks/useModal';
 import Modal from './SaveModal/SaveModal'
 import {useState, useEffect} from 'react';
 
-function FormPanel({ submitCallback, model }) {
-    const [inputs, setInputs, clearInputs, handleSelectChange] = useForm(model, submitCallback);
+function FormPanel({ model }) {
+    const [inputs, setInputs, clearInputs, handleSelectChange, setSelectColor] = useForm(model);
     const {isShowing, toggle} = useModal();
     const [btnDisabled, setBtnDisabled] = useState(true)
 
@@ -49,11 +49,14 @@ function FormPanel({ submitCallback, model }) {
                     <div className="contact-section">
                         <div className="contact title">Contact Information</div>
                         <div className="contact flex-box">
-                            <SelectTextInput setInputs={setInputs} {...{
+                            <SelectTextInput 
+                            setInputs={setInputs}
+                            setSelectColor={setSelectColor}
+                             {...{
                                 name: "firstName",
                                 label: "First Name",
                                 options: [
-                                    { value:'-None', name:'-None', disabled:true, selected:true},
+                                    { value:'-None', name:'-None', disabled:true},
                                     { value: 'Mr', name: 'Mr' },
                                     { value: 'Mrs', name: 'Mrs' },
                                     { value: 'Miss', name: 'Miss' },
@@ -65,7 +68,6 @@ function FormPanel({ submitCallback, model }) {
                             <TextInput setInputs={setInputs} {...{
                                 name: "lastName",
                                 label: "Last Name",
-                                type: "Text",
                                 placeholder: "Smith",
                                 alert: inputs[1].alert,
                             }} />

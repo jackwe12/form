@@ -1,5 +1,5 @@
 import { useState } from 'react';
-const useForm = (initModel, submitCallback) => {
+const useForm = (initModel) => {
   const [inputs, setInputs] = useState(initModel);
 
   const clearInput = () =>{
@@ -9,6 +9,7 @@ const useForm = (initModel, submitCallback) => {
       i.alert="";
     })
     setInputs([...inputs]);
+    document.getElementsByClassName("select-text-input-select")[0].classList.remove("change-select-color");
   }
 
   const handleChange = e => {
@@ -31,6 +32,11 @@ const useForm = (initModel, submitCallback) => {
 
   }
 
+  const setSelectColor = (e)=>{
+    const element = e.target;
+    element.classList.add("change-select-color")
+}
+
 
   const validateInput = input => {
     let alert = "";
@@ -43,7 +49,7 @@ const useForm = (initModel, submitCallback) => {
     input.alert = alert;
   }
 
-  return [inputs, handleChange, clearInput, handleSelectChange]
+  return [inputs, handleChange, clearInput, handleSelectChange, setSelectColor]
 };
 
 export default useForm;

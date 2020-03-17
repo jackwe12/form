@@ -7,8 +7,6 @@ const ValidationError = ({ content }) => {
     const [isShowWarning, setIsShowWarning] = useState(false);
 
     const showWarning = (e) =>{
-        // const element = e.target;
-        // element.classList.add('show-warning');
         if (isShowWarning){
             setIsShowWarning(false);
         }else{
@@ -17,7 +15,7 @@ const ValidationError = ({ content }) => {
     }
 
     return (
-        <div className="uk-text-danger uk-text-small" style={{ "height": "21px" }}>
+        <div className="uk-text-danger" style={{ "height": "21px" }}>
             {   content!==""?
                 <img src={warning} className="exclamation-circle" onClick={showWarning} alt="exclamation-circle.png"></img>
                 :""
