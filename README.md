@@ -1,10 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This is a react app followed by following rules:
-1. Use React.js and no library(eg: Material UI, Bootstrap) to demostrate skills.
-2. Use Jest and Enzyme for unit testing
+
+1. Use React.js and no library(eg: Material UI, Bootstrap) for demostrating personal skill only.
+2. Use Jest and Enzyme for unit testing.
 3. Use responsive web design adapt from smallest screen(Iphone5) to desktop screen.
 4. Use React new feature -hooks for demostrating more clean and maintainable code(reusable).
-5. 
+5. Modal, form-validation, form components are all written from plain React.js
 
 
 ## Available Scripts
@@ -45,13 +46,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
 ### Making a Progressive Web App
 
