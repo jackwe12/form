@@ -3,6 +3,8 @@ import React from 'react';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+
 configure({ adapter: new Adapter() });
 
 
@@ -32,13 +34,25 @@ const wrapper2 = shallow(
     }
 
 />)
-// const findByTestAttr = (wrapper, val) =>{
-//     return wrapper.find(`[data-test="${val}]`);
-// }
+
 
 describe('Testing <TextInput/>', ()=>{
+    test('snapshot testing',()=>{
+        const tree =renderer
+        .create(       <TextInput 
+            setInputs={mockHandler}
+            {...{
+            name: "lastName",
+            label: "Last Name",
+            placeholder: "Smith",
+            alert: "Error",
+            }
+        }
+    
+    />).toJSON();
+            expect(tree).toMatchSnapshot();
+        })
     test('label tag renders correct text',()=>{
-        // expect(wrapper).find('label').hasClass('lastName').toBe(true);
         expect(wrapper.find('label').text()).toEqual('Last Name');
     });
     test('input tag render correctly prop',()=>{

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <SelectTextInput/>  1`] = `
+<div
+  className="input-component select-text"
+>
+  <label>
+    First Name
+  </label>
+  <select
+    className="select-text-input-select"
+    defaultValue="-None"
+    name="firstName"
+    onChange={[MockFunction]}
+  >
+    <option
+      disabled={true}
+      onClick={[MockFunction]}
+      value="-None"
+    >
+      -None
+    </option>
+    <option
+      onClick={[MockFunction]}
+      value="Mr"
+    >
+      Mr
+    </option>
+  </select>
+  <input
+    className="uk-input uk-form-danger"
+    id="firstName"
+    name="firstName"
+    onChange={[MockFunction]}
+    placeholder="John"
+  />
+  <div
+    className="uk-text-danger"
+    style={
+      Object {
+        "height": "21px",
+      }
+    }
+  >
+    <img
+      alt="exclamation-circle.png"
+      className="exclamation-circle"
+      onClick={[Function]}
+      src="exclamation-circle.png"
+    />
+    
+  </div>
+</div>
+`;

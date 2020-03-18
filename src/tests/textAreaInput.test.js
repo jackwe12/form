@@ -3,6 +3,8 @@ import React from 'react';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+
 configure({ adapter: new Adapter() });
 
 
@@ -31,6 +33,20 @@ const wrapper2 = shallow(
 />)
 
 describe('Testing <TextAreaInput/>', ()=>{
+    test('snapshot testing',()=>{
+        const tree =renderer
+        .create(      <TextAreaInput 
+            setInputs={mockHandler}
+            {...{
+            name: "description",
+            label: "Description",
+            alert: "error",
+            }
+        }
+    
+    />).toJSON();
+            expect(tree).toMatchSnapshot();
+        })
     test('label tag renders correct text',()=>{
         expect(wrapper.find('label').text()).toEqual('Description');
     });

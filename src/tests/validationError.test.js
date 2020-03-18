@@ -1,17 +1,15 @@
-import SelectTextInput from '../components/ValidationError/ValidationError';
 import React from 'react';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { shallow } from 'enzyme';
 import ValidationError from '../components/ValidationError/ValidationError';
-import { useState } from "react";
+import renderer from 'react-test-renderer';
+
 configure({ adapter: new Adapter() });
 
-const mockHandler = jest.fn();
 const wrapper = shallow(
     <ValidationError
         content="error"
-        // showWarning={mockHandler}
 />)
 const wrapper2 = shallow(
     <ValidationError
@@ -19,6 +17,13 @@ const wrapper2 = shallow(
 />)
 
 describe('Testing <ValidationError/>', ()=>{
+    test('snapshot testing',()=>{
+        const tree =renderer
+        .create(       <ValidationError
+            content=""
+    />).toJSON();
+            expect(tree).toMatchSnapshot();
+        })
     test('image tag should exist when alert',()=>{
         expect(wrapper.find('img').length).toBe(1);
         

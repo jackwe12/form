@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <TextInput/> snapshot testing 1`] = `
+<div
+  className="input-component text-input"
+>
+  <label
+    className="form-label"
+  >
+    Last Name
+  </label>
+  <input
+    className="uk-input uk-form-danger"
+    id="lastName"
+    name="lastName"
+    onChange={[MockFunction]}
+    placeholder="Smith"
+    type=""
+  />
+  <div
+    className="uk-text-danger"
+    style={
+      Object {
+        "height": "21px",
+      }
+    }
+  >
+    <img
+      alt="exclamation-circle.png"
+      className="exclamation-circle"
+      onClick={[Function]}
+      src="exclamation-circle.png"
+    />
+    
+  </div>
+</div>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <SelectInput/> snapshot testing 1`] = `
+<div
+  className="input-component"
+>
+  <label>
+    State
+  </label>
+  <input
+    className="chosen-value"
+    id="state"
+    name="state"
+    onChange={[MockFunction]}
+    placeholder="New South Wales"
+    type=""
+  />
+  <ul
+    className="value-list"
+  >
+    <li
+      name="state"
+      value="New South Wales"
+    >
+      New South Wales
+    </li>
+  </ul>
+  <div
+    className="uk-text-danger"
+    style={
+      Object {
+        "height": "21px",
+      }
+    }
+  >
+    <img
+      alt="exclamation-circle.png"
+      className="exclamation-circle"
+      onClick={[Function]}
+      src="exclamation-circle.png"
+    />
+    
+  </div>
+</div>
+`;
