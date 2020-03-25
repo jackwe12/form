@@ -6,7 +6,7 @@ import TextAreaInput from './TextAreaInput/TextAreaInput';
 import CheckboxInput from './CheckboxInput/CheckboxInput';
 import useForm from '../hooks/useForm';
 import '../style/style.css';
-import logo from '../image/Crunch_Accounting.png'
+import logo from '../image/Jacks.png'; 
 import useModal from '../hooks/useModal';
 import Modal from './SaveModal/SaveModal'
 import {useState, useEffect} from 'react';
@@ -170,7 +170,7 @@ function FormPanel({ model }) {
                         {/* <input className="submit-btn" type="submit" onClick={setSubmit} value="submit" /> */}
                     </div>
                     <footer>
-                        <span className="crunch-accounting">&copy;2020 Crunch Accounting. All right reserved.</span>
+                        <span className="crunch-accounting">&copy;2020 Jack's. All right reserved.</span>
                         <div className="footer-right">
                             <span className="privacy-policy">Privacy Policy </span>
                             <span className="terms-of-service">Terms of Service </span>

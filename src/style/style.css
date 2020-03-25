@@ -4,6 +4,9 @@
     margin-right: auto;
     width: 50%;
 }
+.head-logo img{
+    height: 60px;
+}
 .logo{
     margin: auto;
 }
