@@ -6,6 +6,7 @@ This is a react app followed by following rules:
 3. Use responsive web design adapt from smallest screen(Iphone5) to desktop screen.
 4. Use React new feature -hooks for demostrating more clean and maintainable code(reusable).
 5. Modal, form-validation, form components are all written from plain React.js
+6. Please referer https://jackwe12.github.io/form/ to check the result
 
 
 ## Available Scripts
